@@ -1,0 +1,99 @@
+*{
+    padding: 0;margin: 0;
+    font-family: 'Poppins','Segoe UI', Tahoma;
+}
+.container{
+    background-image: radial-gradient(circle,rgb(27, 29, 31),aqua,yellow,rgb(27, 29, 31));
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    position: relative;
+    padding: 8px 8px;
+    width: 1120px;
+    height:700px;
+    background-image: url(assets/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.main .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 45px;
+}
+.head h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.tout{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.form{
+    width: calc(100%/1.5 - 8px);
+    position: relative;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    padding: 10px;
+    text-align: right;
+    display: inline-block;
+    width: 300px;
+}
+.slct{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slct input,#sexe{
+    color: gray;
+    width:270px;
+    height: 35px;
+    padding-left:10px;
+    background-color: transparent;
+    border:1.5px solid gray;
+}
+.calcul{
+    display: flex;
+    justify-content: flex-end;
+}
+.calcul input{
+   width: 500px;
+   background-color:rgba(0, 0, 195,0.6);
+   color: white;
+   border:none;
+   padding: 12px;
+
+}
+.img{
+    position: relative;
+    background-color: #fff;
+    width: calc(100%/4 - 8px);
+    height: 430px;
+    border:1px solid gray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img .indique{
+    height:80%;
+    width:100%;
+    background-image:url(assets/default.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.img .mot{padding: 15px;}

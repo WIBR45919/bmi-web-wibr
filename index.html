@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Devoir D'ADDA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="head">
+                <h1>Indice de masse corporelle</h1>
+                <p>Calculer votre indice de masse corporelle pour savoir s vous etes en sante</p>
+            </div>
+            <div class="tout">
+                <div class="form">
+                    <form>
+                        <div class="slct">
+                            <label for="sexe">Commencez par indiquez votre sexe:</label>
+                            <select name="sex" id="sexe"  required style="width: 284px;height:35px;">
+                                <option value="" selected>Selectionnez votre sexe</option>
+                                <option value="M">Maxculin</option>
+                                <option value="F">Feminin</option>
+                            </select>
+                        </div>
+                        <div class="slct">
+                            <label for="poids">Quelle est votre poids?</label>
+                            <input type="number" name="poids" id="poids" required placeholder="Entrez votre poids ..."/>
+                        </div>
+                        <div class="slct">
+                            <label for="taille">Quelle est votre taille?</label>
+                            <input type="number" name="taille" id="taille" required placeholder="Entrez votre taille ...">
+                        </div>
+                        <div class="calcul">
+                            <input type="button" value="Calculer" onclick="verification()">
+                        </div>
+                    </form>
+                </div>
+                <div class="img">
+                    <div class="ici indique"></div>
+                    <p class="mot">Determinez votre indice ...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
